@@ -1,0 +1,31 @@
+# Node dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Python virtual env
+venv/
+ml-api/venv/
+
+# Environment files
+.env
+client/.env
+server/.env
+ml-api/.env
+
+# Uploads and temp files
+uploads/
+temp/
+server/uploads/
+ml-api/temp/
+
+# Build files
+build/
+dist/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+npm-debug.log*
