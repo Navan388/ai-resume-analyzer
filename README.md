@@ -18,7 +18,6 @@ An AI-powered Resume Analyzer built using MERN stack + Machine Learning.
 ### Frontend
 - React
 - Axios
-- Tailwind CSS
 
 ### Backend
 - Node.js
@@ -35,27 +34,26 @@ An AI-powered Resume Analyzer built using MERN stack + Machine Learning.
 
 React → Node.js API → FastAPI ML Service → MongoDB
 
+## Installation
 
-# Hosting
+### Client
+```bash
+cd client
+npm install
+npm start
+```
 
-Since the project has some parts:
+### Server
+```bash
+cd server
+npm install
+npm run dev
+```
 
-### Frontend
-### Node Backend
 ### ML API
-### Database
-
-# Hosting Order (Important)
-
-## 1. Deploy ML API
-
-Because backend depends on it.
-
----
-
-## 2. Deploy Node Backend
-
-Update:
-
-```js
-axios.post("YOUR_ML_API_URL/parse")
+```bash
+cd ml-api
+pip install -r requirements.txt
+source venv/Scripts/activate
+uvicorn main:app --reload --port 8000
+```
